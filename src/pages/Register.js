@@ -7,22 +7,36 @@ function Register() {
 
       <div className='my-auto mx-auto w-1/3' id="RegisterForm">
           <h1 className='text-3xl font-bold space-x-2 my-2'>
-            Already have an account?
+            Create an account
           </h1>
           <h3>
             Your personal job finder is here
           </h3>
 
-          <form className=" mt-10 mb-5 w-full">
+  <form className=" mt-10 mb-5 w-full">
     <div className="mb-4">
       
-      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
+      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" />
+    </div>
+
+    <div className="mb-6">
+
+    <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email" />
     </div>
     <div className="mb-6">
-      
-      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password" />
-     
+
+    <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="mobile" type="text" placeholder="Mobile" />
     </div>
+    <div className="mb-6">
+
+    <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder="Password" />
+    </div>
+   
+    <div class="form-check mb-10">
+      <input  type="checkbox" value="" id="" />
+      <label className='text-sm' for=""> By creating an account, I agree to our terms of use and privacy policy </label>
+    </div>
+   
     
       <button className="bg-red-500 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded focus:outline-none focus:shadow-outline text-xl w-1/2" type="button">
        Sign in
