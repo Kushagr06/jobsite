@@ -4,7 +4,8 @@ import img from '../assets/formImage1.png'
 function Register() {
   return (
     <div className=' flex justify-between h-screen w-auto '>
-      <div className='my-auto mx-auto' id="RegisterForm">
+
+      <div className='my-auto mx-auto w-1/3' id="RegisterForm">
           <h1 className='text-3xl font-bold space-x-2 my-2'>
             Already have an account?
           </h1>
@@ -12,26 +13,28 @@ function Register() {
             Your personal job finder is here
           </h3>
 
-          <form className=" mt-10 w-full">
+          <form className=" mt-10 mb-5 w-full">
     <div className="mb-4">
       
-      <input className=" appearance-none border-2 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
+      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email" />
     </div>
     <div className="mb-6">
       
-      <input className=" appearance-none border-2 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password" />
+      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password" />
      
     </div>
-    <div className="flex items-center justify-between">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-        Sign In
+    
+      <button className="bg-red-500 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded focus:outline-none focus:shadow-outline text-xl w-1/2" type="button">
+       Sign in
       </button>
-      <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="/">
-        Forgot Password?
-      </a>
-    </div>
+     
   </form>
+  Don't have an account?
+  <a className="inline-block px-2 font-medium underline" href="/">
+     Sign Up
+      </a>
       </div>
+
       <img src={img} alt="FormImage" />
     </div>
   )
