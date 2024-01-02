@@ -4,7 +4,7 @@ import icon from '../assets/icon.jpg'
 function JobCard() {
   return (
     
-    <div className='h-[20vh] w-2/3 my-10 rounded-sm mx-1/3 border-l-white border-l-4  bg-white hover:border-l-4 hover:border-red-500 duration-100' id="jobCard">
+    <div className='h-[20vh] max-h-[30vh] w-2/3 my-10 rounded-sm mx-1/3 border-l-white border-l-4  bg-white hover:border-l-4 hover:border-red-500 duration-100' id="jobCard">
           
         <div className=' flex justify-between my-[2.5vh] mx-2'>
 
