@@ -1,9 +1,10 @@
 import React from 'react'
+import JobCard from '../components/JobCard'
 
 function MainPage() {
   return (
-    <div>
-      
+    <div className='flex justify-center'>
+      <JobCard />
     </div>
   )
 }

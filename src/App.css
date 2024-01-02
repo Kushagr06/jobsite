@@ -22,3 +22,10 @@
 #header{
   border-radius: 0px 0px 30px 30px; 
 }
+
+#jobCard{
+  box-shadow: 1px 1px 15px 2px #ffcdd2;
+}
+#jobCard:hover> #jobCard-indicator{
+  background-color:#f44336;
+}
