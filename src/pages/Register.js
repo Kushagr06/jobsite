@@ -49,7 +49,7 @@ function Register() {
       </a>
       </div>
 
-      <img src={img} alt="FormImage" />
+      <img src={img} alt="FormImage" className=' w-1/3 h-auto'/>
     </div>
   )
 }

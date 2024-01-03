@@ -54,9 +54,9 @@ function JobCard() {
        {/* Tags and Join button */} 
        <div className='flex-col justify-between w-auto'>
         <div className=' my-4 flex justify-end'>
-          <div className=' bg-red-100 px-2 py-1 mx-1'>hello</div>
-          <div className=' bg-red-100 px-2 py-1 mx-1'>hello</div>   
-          <div className=' bg-red-100 px-2 py-1 mx-1'>hello</div> 
+          <div className=' bg-red-100 px-2 py-1 mx-1'>html</div>
+          <div className=' bg-red-100 px-2 py-1 mx-1'>public speaking</div>   
+          <div className=' bg-red-100 px-2 py-1 mx-1'>javascript</div> 
         </div>
         <div className='flex justify-end'>
         <button className="text-white bg-red-500  text-center align-middle px-5 rounded-sm focus:outline-none focus:shadow-outline text-lg w-auto h-[5vh] mx-1 hover:shadow-md  " type="button">
