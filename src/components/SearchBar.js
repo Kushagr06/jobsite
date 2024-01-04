@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function SearchBar() {
   return (
@@ -28,9 +29,11 @@ function SearchBar() {
       </div>
 
       <div className="my-4 flex align-middle m-1">
+        <Link to="/addjob">
       <button className="bg-red-500 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded focus:outline-none focus:shadow-outline text-sm" type="button">
        + Add Job
       </button>
+      </Link>
       </div>
 
       </div>
