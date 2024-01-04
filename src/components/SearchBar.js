@@ -17,15 +17,15 @@ function SearchBar() {
         <option value="React">React</option>
         </select>
 
-        <div className=' px-2 py-3 bg-red-100 mx-2 text-center w-auto'>
-          html  
-        </div>
-        <div className=' px-2 py-3 bg-red-100 mx-2 text-center w-auto'>
+        <button className=' px-2 py-3 bg-red-100 mx-2 text-center hover:bg-red-500'>
+          html
+        </button>
+        <button className=' px-2 py-3 bg-red-100 mx-2 text-center hover:bg-red-500'>
           javascript
-        </div>
-        <div className=' px-2 py-3 bg-red-100 mx-2 text-center w-auto'>
+        </button>
+        <button className=' px-2 py-3 bg-red-100 mx-2 text-center hover:bg-red-500'>
           Reactjs
-        </div>
+        </button>
       </div>
 
       <div className="my-4 flex align-middle m-1">
