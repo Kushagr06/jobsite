@@ -6,7 +6,7 @@ function SearchBar() {
     <div className="flex justify-center">
     <div className='h-[30vh] max-h-[40vh] w-2/3 my-5 rounded-sm mx-2 bg-white flex justify-center  items-center' id="SearchBar">
     <div className="w-2/3">
-      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" />
+      <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder= "&#128269; Search" />
       <div className='flex justify-between'>
 
       <div className="my-4 flex align-middle m-1">
@@ -37,7 +37,7 @@ function SearchBar() {
       </div>
 
       </div>
-      <div className=' px-3 text-red-500'><button className=' py-1 px-2 border-red-500 border-2 rounded-sm'>clear</button></div>
+      <div className=' px-3 text-red-500 '><button className=' py-1 px-2 border-red-500 hover:border-red-700 hover:text-red-700 border-2 rounded-sm'>clear</button></div>
       
     </div>
 
