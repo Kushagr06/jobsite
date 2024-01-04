@@ -1,5 +1,6 @@
 import React from 'react'
 import img from '../assets/formImage1.png'
+import { Link } from 'react-router-dom'
 
 function Register() {
   return (
@@ -39,14 +40,14 @@ function Register() {
    
     
       <button className="bg-red-500 hover:bg-red-700 text-white font-semibold py-3 px-4 rounded focus:outline-none focus:shadow-outline text-xl w-1/2" type="button">
-       Sign in
+       Sign Up
       </button>
      
   </form>
-  Don't have an account?
-  <a className="inline-block px-2 font-medium underline" href="/">
-     Sign Up
-      </a>
+  Already have an account?
+  <Link className="inline-block px-2 font-medium underline" to="/login">
+     Sign In
+      </Link>
       </div>
 
       <img src={img} alt="FormImage" className=' w-1/3 h-auto'/>

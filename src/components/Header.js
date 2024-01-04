@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   return (
@@ -9,12 +11,16 @@ function Header() {
       </div>
 
       <div id="profile" className='px-20'>
+        <Link to="/login">
       <button className=" text-white border-2 border-white text-center align-middle  px-5 rounded-lg focus:outline-none focus:shadow-outline text-lg w-auto h-[5vh] mx-1 hover:shadow-md " type="button">
        Login
       </button>
+      </Link>
+      <Link to="/signup">
       <button className="bg-white text-red-500  text-center align-middle px-5 rounded-lg focus:outline-none focus:shadow-outline text-lg w-auto h-[5vh] mx-1 hover:shadow-md  " type="button">
        Register
       </button>
+      </Link>
       </div>
     </div>
   </div>
