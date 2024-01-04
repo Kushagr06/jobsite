@@ -30,3 +30,8 @@
 #AddjobForm{
   color:black;
 }
+
+#SearchBar{
+  box-shadow: 1px 1px 15px 2px #ffcdd2;
+
+}

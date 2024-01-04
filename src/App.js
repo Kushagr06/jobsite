@@ -12,7 +12,7 @@ import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App bg-slate-50 text-lg">
+    <div className="App bg-slate-50 text-lg overflow-auto">
       
       <BrowserRouter>
       <Routes >
