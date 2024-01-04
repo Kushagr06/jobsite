@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
   <div >
-    <div id="header" className='w-screen h-[15vh] bg-red-400 flex justify-between items-center px-16'>
+    <div id="header" className='w-full h-[15vh] bg-red-400 flex justify-between items-center px-16'>
       <div id="header-name" className='text-white font-semibold text-lg '>
         Jobfinder
       </div>
