@@ -1,8 +1,10 @@
 const ProductReducer=(state,action)=>{
   
+
+
   return{
     ...state,
-    products:action.payload
+    products:action.payload,
   };
 };
 
