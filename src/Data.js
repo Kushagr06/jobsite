@@ -1,4 +1,4 @@
-
+const data=
 [{
   "id":1,
   "position":"FrontEnd Developer",
@@ -25,7 +25,7 @@
   "location":"India",
   "skills":[
     "javascript",
-    "html",
+    "language",
     "css"
   ],
   "image":"/"
@@ -42,10 +42,12 @@
   "skills":[
     "javascript",
     "html",
-    "css"
+    "django"
   ],
   "image":"/"
 
 }
-]
+];
+
+export {data}
 
