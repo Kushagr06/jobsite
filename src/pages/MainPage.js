@@ -3,17 +3,17 @@ import JobCard from '../components/JobCard'
 import SearchBar from '../components/SearchBar';
 import { UseProductContext } from '../context/ProductContext';
 
-function MainPage() {
-  const {products}=UseProductContext();
-  console.log(products);
 
+function MainPage() {
+ // console.log(products.data);
+ const {products}=UseProductContext();
   return (
     <>
     
     <div className=' flex-col justify-center'>
       
     <SearchBar/>
-      <JobCard />
+      <JobCard data={products} />
       
 
     </div>

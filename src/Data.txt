@@ -1,6 +1,5 @@
-const data=
-[
-{
+
+[{
   "id":1,
   "position":"FrontEnd Developer",
   "no":10,
@@ -50,4 +49,3 @@ const data=
 }
 ]
 
-export {data}
