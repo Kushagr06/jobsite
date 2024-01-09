@@ -62,7 +62,7 @@ const JobCard=({data})=>{
        <div className='flex-col justify-between w-auto'>
         <div className=' my-4 flex justify-end'>
           {info.skills.map((skillinfo)=>(
-          <div className=' bg-red-100 px-2 py-1 mx-1'>{skillinfo}</div> 
+          <div className=' bg-red-100 px-2 py-1 mx-1' key={skillinfo}>{skillinfo}</div> 
           ))}  
         </div>
         <div className='flex justify-end'>
