@@ -23,12 +23,11 @@ const filterReducer=(state, action)=>{
 
       case "FILTER_PRODUCTS":
         let {all_products}=state;
-        let tempFilterProducts=all_products;
+        let tempFilterProducts=[...all_products];
         const{text}=state.filters;
-
         if(text){
           tempFilterProducts=tempFilterProducts.filter((e)=>{
-              return e.position.toLowerCase().includes(text);
+              return e.position.includes(text);
           });
         }
 

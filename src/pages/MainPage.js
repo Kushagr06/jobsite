@@ -16,7 +16,7 @@ function MainPage() {
     <div className=' flex-col justify-center'>
       
     <SearchBar/>
-      <JobCard data={products} />
+      <JobCard data={filter_products} />
       
 
     </div>
