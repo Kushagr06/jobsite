@@ -23,13 +23,18 @@ const filterReducer=(state, action)=>{
 
       case "FILTER_PRODUCTS":
         let {all_products}=state;
-        let tempFilterProducts=[...all_products];
+        var tempFilterProducts=[...all_products];
+
         const{text}=state.filters;
+        console.log("Current text",text)
+
         if(text){
           tempFilterProducts=tempFilterProducts.filter((e)=>{
-              return e.position.includes(text);
+              return e.id===1;
+
           });
         }
+        console.log("temp",tempFilterProducts)
 
         return {
           ...state,

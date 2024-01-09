@@ -23,7 +23,6 @@ export const FilterContextProvider=({children})=>{
   const updateFilterValue=(event)=>{
     let name="text"
     let value=event.target.value;
-    // console.log("hello",name,value)
 
     return dispatch({type:"UPDATE_FILTERS_VALUE",payload:{name,value} });
   };
