@@ -30,7 +30,7 @@ export const FilterContextProvider=({children})=>{
 
   useEffect(()=>{
     dispatch({type:"FILTER_PRODUCTS"});
-    dispatch({type:"LOAD_FILTER", payload:products})
+    dispatch({type:"LOAD_FILTER", payload:products.data})
   },[products, state.filters]);
 
   return (

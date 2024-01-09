@@ -7,8 +7,8 @@ const JobCard=({data})=>{
   return (
     <>
     {
-        data.data?  
-        data.data.map((info)=>(
+        data?  
+        data.map((info)=>(
     <div className='flex justify-center' key={info.id}> 
       
     <div className='h-[20vh] max-h-[30vh] w-2/3 my-2  rounded-sm mx-1 border-l-white border-l-4  bg-white hover:border-l-4 hover:border-red-500 duration-100' id="jobCard">

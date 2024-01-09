@@ -16,7 +16,7 @@ const AppProvider=({children})=>{
    
   const getProduct=()=>{
     const products={data};
-    dispatch({type:"API_DATA", payload:products})
+    dispatch({type:"API_DATA", payload:products.data})
   };
 
   useEffect(()=>{
