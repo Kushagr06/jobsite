@@ -9,7 +9,8 @@ const initialState={
   all_products:[],
   filters:{
     text:"",
-  }
+  },
+ 
 };
 
 export const FilterContextProvider=({children})=>{
@@ -21,7 +22,7 @@ export const FilterContextProvider=({children})=>{
 
   //update filter values
   const updateFilterValue=(event)=>{
-    let name="text"
+    let name="text";
     let value=event.target.value;
 
     return dispatch({type:"UPDATE_FILTERS_VALUE",payload:{name,value} });
@@ -29,8 +30,11 @@ export const FilterContextProvider=({children})=>{
 
   useEffect(()=>{
     dispatch({type:"FILTER_PRODUCTS"});
+  },[products,state.filters])
+
+  useEffect(()=>{
     dispatch({type:"LOAD_FILTER", payload:products})
-  },[products, state.filters]);
+  },[products]);
 
   return (
   <FilterContext.Provider value={{...state,updateFilterValue}}>
