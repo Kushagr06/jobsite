@@ -5,8 +5,10 @@ const filterReducer=(state, action)=>{
       case"LOAD_FILTER":
       return {
         ...state,
-        filter_products:action.payload,
-        all_products:action.payload,
+        filter_products:
+          action.payload.data,
+        all_products:
+          action.payload.data,
       };
 
       case "UPDATE_FILTERS_VALUE":
@@ -18,6 +20,22 @@ const filterReducer=(state, action)=>{
             [name]:value
           },
                   }
+
+      case "FILTER_PRODUCTS":
+        let {all_products}=state;
+        let tempFilterProducts=all_products;
+        const{text}=state.filters;
+
+        if(text){
+          tempFilterProducts=tempFilterProducts.filter((e)=>{
+              return e.position.toLowerCase().includes(text);
+          });
+        }
+
+        return {
+          ...state,
+          filter_products:tempFilterProducts,
+        };
 
       default: 
       return state

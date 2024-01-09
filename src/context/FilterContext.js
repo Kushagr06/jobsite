@@ -29,8 +29,9 @@ export const FilterContextProvider=({children})=>{
   };
 
   useEffect(()=>{
+    dispatch({type:"FILTER_PRODUCTS"});
     dispatch({type:"LOAD_FILTER", payload:products})
-  },[products]);
+  },[products, state.filters]);
 
   return (
   <FilterContext.Provider value={{...state,updateFilterValue}}>
