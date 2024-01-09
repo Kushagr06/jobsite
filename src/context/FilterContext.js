@@ -7,6 +7,9 @@ const FilterContext=createContext();
 const initialState={
   filter_products:[],
   all_products:[],
+  filters:{
+    text:"",
+  }
 };
 
 export const FilterContextProvider=({children})=>{
@@ -15,12 +18,22 @@ export const FilterContextProvider=({children})=>{
 
   const [state,dispatch]=useReducer(reducer, initialState);
 
+
+  //update filter values
+  const updateFilterValue=(event)=>{
+    let name="text"
+    let value=event.target.value;
+    // console.log("hello",name,value)
+
+    return dispatch({type:"UPDATE_FILTERS_VALUE",payload:{name,value} });
+  };
+
   useEffect(()=>{
     dispatch({type:"LOAD_FILTER", payload:products})
   },[products]);
 
   return (
-  <FilterContext.Provider value={{...state}}>
+  <FilterContext.Provider value={{...state,updateFilterValue}}>
     {children}
   </FilterContext.Provider>
 );

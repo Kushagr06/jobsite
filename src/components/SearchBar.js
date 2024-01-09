@@ -1,12 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useFilterContext } from '../context/FilterContext'
 
 function SearchBar() {
+  const {
+    filters:{text},
+    updateFilterValue,
+  }=useFilterContext();
+  
   return (
     <div className="flex justify-center">
     <div className='h-[30vh] max-h-[40vh] w-2/3 my-5 rounded-sm mx-2 bg-white flex justify-center  items-center' id="SearchBar">
     <div className="w-2/3">
+      <form onSubmit={(e)=>e.preventDefault()} type="text" name="text" value={text} onChange={updateFilterValue}>
       <input className=" appearance-none border-2 rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder= "&#128269; Search" />
+      </form>
       <div className='flex justify-between'>
 
       <div className="my-4 flex align-middle m-1">

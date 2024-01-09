@@ -9,6 +9,16 @@ const filterReducer=(state, action)=>{
         all_products:action.payload,
       };
 
+      case "UPDATE_FILTERS_VALUE":
+        const {name,value}=action.payload;
+        return {
+          ...state,
+          filters:{
+            ...state.filters,
+            [name]:value
+          },
+                  }
+
       default: 
       return state
     }
