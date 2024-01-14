@@ -1,5 +1,6 @@
 import React from 'react'
 import icon from '../assets/icon.jpg' 
+import {Link} from 'react-router-dom'
 
 
 const JobCard=({data})=>{
@@ -66,9 +67,11 @@ const JobCard=({data})=>{
           ))}  
         </div>
         <div className='flex justify-end'>
+        <Link to={`/${info.position}/${info.id}`} state={info}>
         <button className="text-white bg-red-500  text-center align-middle px-5 rounded-sm focus:outline-none focus:shadow-outline text-lg w-auto h-[5vh] mx-1 hover:shadow-md  " type="button">
        Register
       </button>
+      </Link>
       </div>
       </div>
        </div>

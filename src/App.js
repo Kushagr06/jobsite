@@ -7,6 +7,7 @@ import MainPage from './pages/MainPage';
 import AddJob from './pages/AddJob';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './components/Layout';
+import SinglePosition from './pages/SinglePosition';
 
 
 
@@ -18,10 +19,12 @@ function App() {
       <Routes >
             <Route element={<Layout />}>
             <Route exact path="/" element={<MainPage />}/>
+            <Route exact path="/:category/:id" element={<SinglePosition/>}/>
             </Route>
             <Route  path="/login" element={<Login />}/>
             <Route  path="/signup" element={<Register />}/>
             <Route  path="/addjob" element={<AddJob />}/>
+            
     </Routes>
      </BrowserRouter>
      
