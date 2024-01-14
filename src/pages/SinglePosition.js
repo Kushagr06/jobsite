@@ -11,7 +11,7 @@ function SinglePosition() {
     <div className='flex-col justify-center items-center mt-5 m-auto w-3/4'>
       {
         <>
-    <div className=' w-full h-[15vh] bg-white shadow-md border-2  flex justify-center items-center overflow-clip font-semibold text-xl'>
+    <div className=' w-full h-[15vh] bg-white shadow-md border-2 flex justify-center items-center overflow-clip font-semibold text-xl'>
       {data.position}
     </div>
     <div className='mt-5 mb-5 w-full bg-white shadow-md min-h-screen h-auto text-left px-10 py-10'>
@@ -62,7 +62,7 @@ function SinglePosition() {
           Skill(s) Required
         </div>
         {data.skills.map((info)=>(
-          <span className=' m-2 bg-red-200 rounded-lg px-5 py-1'>
+          <span className=' m-2 bg-red-200 rounded-md px-5 py-1'>
           {info}
           </span>
         ))}
