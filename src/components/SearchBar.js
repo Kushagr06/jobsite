@@ -6,6 +6,7 @@ function SearchBar() {
   const {
     filters:{text},
     updateFilterValue,
+    sorting
   }=useFilterContext();
   
   return (
@@ -17,13 +18,18 @@ function SearchBar() {
       </form>
       <div className='flex justify-between'>
 
+      
       <div className="my-4 flex align-middle m-1">
-        <select name="JobType" id="jobType" className=" border-2 rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline text-sm">
-        <option value="">Skills:</option>
+        {/* second sort */}
+        <form action="#">
+          <label htmlFor="jobType">Skills:</label>
+        <select name="jobType" id="jobType" className=" border-2 rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline text-sm"
+        onClick={sorting}>
         <option value="html">html</option>
-        <option value="javascript">js</option>
-        <option value="React">React</option>
+        <option value="javascript">javascript</option>
+        <option value="React">ReactJS</option>
         </select>
+        </form>
 
         <button className=' px-2 py-3 bg-red-100 mx-2 text-center hover:bg-red-500'>
           html

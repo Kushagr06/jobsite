@@ -22,7 +22,7 @@ const filterReducer=(state, action)=>{
             ...state.filters,
             [name]:value
           },
-                  }
+                  };
 
       case "FILTER_PRODUCTS":
         let {all_products}=state;
@@ -41,6 +41,15 @@ const filterReducer=(state, action)=>{
           filter_products:tempFilterProducts,
           
         };
+      
+      case"GET_SORT_VALUE":
+      let userSortVal=document.getElementById('jobType');
+      let sort_value=userSortVal.options[userSortVal.selectedIndex].value;
+        return {
+          ...state,
+          sorting_value:sort_value,
+        };
+
 
       default: 
       return state

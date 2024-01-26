@@ -7,6 +7,7 @@ const FilterContext=createContext();
 const initialState={
   filter_products:[],
   all_products:[],
+  sorting_value:"html",
   filters:{
     text:"",
   },
@@ -28,6 +29,11 @@ export const FilterContextProvider=({children})=>{
     return dispatch({type:"UPDATE_FILTERS_VALUE",payload:{name,value} });
   };
 
+    // sorting Function
+    const sorting=()=>{
+        dispatch({type:"GET_SORT_VALUE"});
+    };
+
   useEffect(()=>{
     dispatch({type:"FILTER_PRODUCTS"});
   },[products,state.filters])
@@ -36,8 +42,12 @@ export const FilterContextProvider=({children})=>{
     dispatch({type:"LOAD_FILTER", payload:products})
   },[products]);
 
+  useEffect(()=>{
+    
+  },[state.sorting_value])
+
   return (
-  <FilterContext.Provider value={{...state,updateFilterValue}}>
+  <FilterContext.Provider value={{...state,updateFilterValue,sorting}}>
     {children}
   </FilterContext.Provider>
 );
