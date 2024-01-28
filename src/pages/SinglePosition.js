@@ -6,7 +6,7 @@ function SinglePosition() {
   const navigate=useNavigate()
   const location= useLocation();
   const data=location.state
-  console.log(data)
+  // console.log(data)
   return (
     <div className='flex-col justify-center items-center mt-5 m-auto w-3/4'>
       {

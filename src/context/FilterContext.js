@@ -43,7 +43,7 @@ export const FilterContextProvider=({children})=>{
   },[products]);
 
   useEffect(()=>{
-    
+    dispatch({type:"SORTING_PRODUCTS",payload:products});
   },[state.sorting_value])
 
   return (

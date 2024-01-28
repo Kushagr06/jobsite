@@ -35,7 +35,7 @@ const filterReducer=(state, action)=>{
 
           });
         }
-        console.log("update:",tempFilterProducts)
+        // console.log("update:",tempFilterProducts)
         return {
           ...state,
           filter_products:tempFilterProducts,
@@ -49,6 +49,20 @@ const filterReducer=(state, action)=>{
           ...state,
           sorting_value:sort_value,
         };
+
+      case "SORTING_PRODUCTS":
+        let newSortData;
+        let tempSortProduct=[...action.payload];
+        console.log(tempSortProduct, state.sorting_value);
+        newSortData=tempSortProduct.filter((val)=>{
+            if(val.skills.indexOf(state.sorting_value)>=0)
+              return val;
+        })
+        return {
+          ...state,
+          filter_products:newSortData,
+
+        }
 
 
       default: 
